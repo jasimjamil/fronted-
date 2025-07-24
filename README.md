@@ -84,6 +84,10 @@ export default api;
 ### 2. Backend Authentication Controller
 ```javascript
 // backend/src/controllers/authController.js
+import User from '../models/User';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+
 export const login = async (req, res) => {
   const { email, password } = req.body;
   
@@ -200,4 +204,4 @@ MIT License
 
 **Happy Coding! 💻✨**
 
-Developed with ❤️ by Appalo Team 
+Developed with ❤️ by Appalo Team
